@@ -8,3 +8,4 @@ You will need to [install packer](https://github.com/wbthomason/packer.nvim#quic
 ## References and credits
 
 - Starting configuration from [Vim config](https://vimconfig.com/)
+- Package manager [Packer](https://github.com/wbthomason/packer.nvim) 
