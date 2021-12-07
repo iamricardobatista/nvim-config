@@ -21,5 +21,5 @@ set ruler			" Show row and column ruler information
 set undolevels=1000		" Number of undo levels
 set backspace=indent,eol,start	" Backspace behaviour
 
-" enable lua plugins
-lua require('plugins')
+lua require('plugins')		" enable lua plugins ./lua/plugins.lua
+lua require('base')		" base configuration ./lua/base.lua
