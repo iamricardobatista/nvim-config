@@ -1,2 +1,2 @@
-autocmd BufWritePre * :%s/\s\+$//e
-autocmd BufWritePre * :retab
+autocmd BufWritePre * :%s/\s\+$//e  " remove trailing spaces from line endings on save
+autocmd BufWritePre * :retab	    " retav files on save
