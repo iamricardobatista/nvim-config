@@ -10,6 +10,7 @@ set smartcase			" Enable smart-case search
 set ignorecase			" Always case-insensitive
 set incsearch			" Searches for strings incrementally
 
+set expandtab			" Use spaces instead of tabs
 set autoindent			" Auto-indent new lines
 set shiftwidth=4		" Number of auto-indent spaces
 set smartindent			" Enable smart-indent
