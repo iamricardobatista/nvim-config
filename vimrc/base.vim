@@ -9,3 +9,6 @@ augroup BWCCreateDir
         \ | execute "silent! !mkdir -p ".shellescape(expand('%:h'), 1)
         \ | redraw! | endif
 augroup END
+
+" start auto completion
+autocmd VimEnter * :COQnow -s

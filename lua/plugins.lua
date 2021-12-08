@@ -45,4 +45,11 @@ return require('packer').startup(function()
 
   -- lsp configuration
   use 'neovim/nvim-lspconfig'
+
+  -- completion
+  use {
+    'ms-jpq/coq_nvim',
+    branch = 'coq',
+    requires = {'ms-jpq/coq.artifacts', branch =  'artifacts'}
+  }
 end)
