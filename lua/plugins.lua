@@ -13,6 +13,9 @@ return require('packer').startup(function()
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Git plugin
+  use 'tpope/vim-fugitive'
+
   -- Git file changes
   use 'airblade/vim-gitgutter'
 
