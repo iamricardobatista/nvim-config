@@ -24,4 +24,16 @@ return require('packer').startup(function()
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
+
+  -- highlights the current function
+  use {
+    "folke/twilight.nvim",
+    config = function()
+      require("twilight").setup {
+      }
+    end
+  }
+
+  -- lsp configuration
+  use 'neovim/nvim-lspconfig'
 end)

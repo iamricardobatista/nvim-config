@@ -30,3 +30,5 @@ lua require('base')
 source ~/.config/nvim/vimrc/base.vim
 " key shortcuts for telescope configuration
 source ~/.config/nvim/vimrc/telescope.vim
+" enable twilight by default
+source ~/.config/nvim/vimrc/twilight.vim
