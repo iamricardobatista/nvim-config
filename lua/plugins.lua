@@ -13,4 +13,12 @@ return require('packer').startup(function()
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Git file changes
+  use 'airblade/vim-gitgutter'
+
+  -- status line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
 end)
