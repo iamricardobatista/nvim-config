@@ -6,4 +6,11 @@ return require('packer').startup(function()
 
   -- Color scheme
   use 'EdenEast/nightfox.nvim'
+
+  -- Fuzzy finder, file picker, symbol navigator
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
 end)
