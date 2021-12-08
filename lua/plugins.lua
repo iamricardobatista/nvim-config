@@ -34,6 +34,15 @@ return require('packer').startup(function()
     end
   }
 
+  -- list code errors and issues
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {}
+    end
+  }
+
   -- lsp configuration
   use 'neovim/nvim-lspconfig'
 end)
