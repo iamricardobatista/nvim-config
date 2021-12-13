@@ -6,3 +6,6 @@ require('lualine').setup()
 
 -- rust language server
 require'lspconfig'.rust_analyzer.setup{}
+
+-- php language server
+require'lspconfig'.intelephense.setup{}
