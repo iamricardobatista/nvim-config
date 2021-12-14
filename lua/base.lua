@@ -9,3 +9,6 @@ require'lspconfig'.rust_analyzer.setup{}
 
 -- php language server
 require'lspconfig'.intelephense.setup{}
+
+-- golang language server
+require'lspconfig'.gopls.setup{}
