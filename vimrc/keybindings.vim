@@ -23,3 +23,6 @@ nnoremap gR <cmd>TroubleToggle lsp_references<cr>
 nnoremap <C-k> <cmd>lua vim.lsp.buf.hover()<cr>
 nnoremap <C-g> <cmd>Telescope lsp_definitions<cr>
 nnoremap <C-s> <cmd>Telescope lsp_type_definitions<cr>
+
+" set key bindings for debug tool
+let g:vimspector_enable_mappings = 'HUMAN'

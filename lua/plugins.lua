@@ -52,4 +52,7 @@ return require('packer').startup(function()
     branch = 'coq',
     requires = {'ms-jpq/coq.artifacts', branch =  'artifacts'}
   }
+
+  -- debug tool
+  use 'puremourning/vimspector'
 end)
