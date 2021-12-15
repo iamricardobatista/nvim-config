@@ -12,3 +12,8 @@ augroup END
 
 " start auto completion
 autocmd VimEnter * :COQnow -s
+
+" add support for local project configuration
+if filereadable("./.lnvimrc")
+    execute "source ./.lnvimrc"
+endif
