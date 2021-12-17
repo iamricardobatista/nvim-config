@@ -33,6 +33,7 @@ source ~/.config/nvim/vimrc/base.vim
 source ~/.config/nvim/vimrc/telescope.vim
 " enable twilight by default
 source ~/.config/nvim/vimrc/twilight.vim
-
 " key bind configuration
 source ~/.config/nvim/vimrc/keybindings.vim
+" set spellcheck
+source ~/.config/nvim/vimrc/spellcheck.vim
