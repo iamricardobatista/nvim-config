@@ -1,5 +1,8 @@
-autocmd BufWritePre * :%s/\s\+$//e  " remove trailing spaces from line endings on save
-autocmd BufWritePre * :retab        " retab files on save
+autocmd BufWritePre * :%s/\s\+$//e          " remove trailing spaces from line endings on save
+autocmd BufWritePre * :retab                " retab files on save
+autocmd BufRead *.html.* set syntax=html    " set html syntax for template files
+autocmd BufRead *.html.* set tabstop=2      " set tabstop as two spaces
+autocmd BufRead *.html.* set shiftwidth=2   " set shiftwith as to spaces
 
 " create folders when saving new buffers
 augroup BWCCreateDir
