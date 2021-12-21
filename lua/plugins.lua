@@ -53,6 +53,9 @@ return require('packer').startup(function()
     requires = {'ms-jpq/coq.artifacts', branch =  'artifacts'}
   }
 
+  -- emmet plugin
+  use 'mattn/emmet-vim'
+
   -- debug tool
   use 'puremourning/vimspector'
 end)
