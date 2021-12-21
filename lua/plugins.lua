@@ -29,8 +29,7 @@ return require('packer').startup(function()
   use {
     "folke/twilight.nvim",
     config = function()
-      require("twilight").setup {
-      }
+      require("twilight").setup {}
     end
   }
 

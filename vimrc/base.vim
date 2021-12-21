@@ -19,6 +19,9 @@ augroup END
 " start auto completion
 autocmd VimEnter * :COQnow -s
 
+" start enable function highlight
+autocmd VimEnter * :TwilightEnable
+
 " add support for local project configuration
 if filereadable("./.lnvimrc")
     execute "source ./.lnvimrc"
