@@ -45,6 +45,11 @@ return require('packer').startup(function()
   -- lsp configuration
   use 'neovim/nvim-lspconfig'
 
+  -- tree sitter for code highlights
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
   -- completion
   use {
     'ms-jpq/coq_nvim',

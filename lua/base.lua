@@ -12,3 +12,6 @@ require'lspconfig'.intelephense.setup{}
 
 -- golang language server
 require'lspconfig'.gopls.setup{}
+
+-- typescript-language-server
+require'lspconfig'.tsserver.setup{}
