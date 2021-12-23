@@ -29,8 +29,7 @@ return require('packer').startup(function()
   use {
     "folke/twilight.nvim",
     config = function()
-      require("twilight").setup {
-      }
+      require("twilight").setup {}
     end
   }
 
@@ -52,6 +51,9 @@ return require('packer').startup(function()
     branch = 'coq',
     requires = {'ms-jpq/coq.artifacts', branch =  'artifacts'}
   }
+
+  -- emmet plugin
+  use 'mattn/emmet-vim'
 
   -- debug tool
   use 'puremourning/vimspector'
