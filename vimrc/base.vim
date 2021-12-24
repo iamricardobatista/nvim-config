@@ -16,7 +16,8 @@ augroup END
 augroup RustFormatOnSave
   autocmd!
   autocmd BufWritePost *.rs execute "silent! !rustfmt %"
-        \ | :e
+  autocmd BufWritePost *.rs :e
+  autocmd BufWritePost *.rs :redraw!
 augroup END
 
 " start auto completion
