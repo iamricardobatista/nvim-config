@@ -13,13 +13,6 @@ augroup BWCCreateDir
         \ | redraw! | endif
 augroup END
 
-augroup RustFormatOnSave
-  autocmd!
-  autocmd BufWritePost *.rs execute "silent! !rustfmt %"
-  autocmd BufWritePost *.rs :e
-  autocmd BufWritePost *.rs :redraw!
-augroup END
-
 " start auto completion
 autocmd VimEnter * :COQnow -s
 

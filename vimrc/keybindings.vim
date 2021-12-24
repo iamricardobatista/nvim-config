@@ -22,6 +22,7 @@ nnoremap gR <cmd>TroubleToggle lsp_references<cr>
 " LSP specific utils
 nnoremap <C-k> <cmd>lua vim.lsp.buf.hover()<cr>
 nnoremap <C-a> <cmd>lua vim.lsp.buf.code_action()<cr>
+nnoremap <C-f> <cmd>lua vim.lsp.buf.formatting()<cr>
 nnoremap <C-g> <cmd>Telescope lsp_definitions<cr>
 nnoremap <C-s> <cmd>Telescope lsp_type_definitions<cr>
 

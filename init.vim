@@ -22,6 +22,7 @@ set ruler                       " Show row and column ruler information
 set undolevels=1000             " Number of undo levels
 set backspace=indent,eol,start  " Backspace behaviour
 set clipboard+=unnamedplus      " Add system clipboard to the list
+set updatetime=300
 
 " enable lua plugins ./lua/plugins.lua
 lua require('plugins')
