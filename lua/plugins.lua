@@ -25,14 +25,6 @@ return require('packer').startup(function()
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
 
-  -- highlights the current function
-  use {
-    "folke/twilight.nvim",
-    config = function()
-      require("twilight").setup {}
-    end
-  }
-
   -- list code errors and issues
   use {
     "folke/trouble.nvim",
@@ -45,11 +37,6 @@ return require('packer').startup(function()
   -- lsp configuration
   use 'neovim/nvim-lspconfig'
 
-  -- tree sitter for code highlights
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
   -- completion
   use {
     'ms-jpq/coq_nvim',
