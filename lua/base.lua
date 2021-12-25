@@ -18,7 +18,10 @@ cmp.setup({
         },
         {
             { name = 'buffer' },
-        })
+        }),
+        mapping = {
+            ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        }
   })
   -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
   cmp.setup.cmdline('/', {
