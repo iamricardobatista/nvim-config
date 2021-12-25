@@ -37,12 +37,14 @@ return require('packer').startup(function()
   -- lsp configuration
   use 'neovim/nvim-lspconfig'
 
-  -- completion
-  use {
-    'ms-jpq/coq_nvim',
-    branch = 'coq',
-    requires = {'ms-jpq/coq.artifacts', branch =  'artifacts'}
-  }
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
 
   -- emmet plugin
   use 'mattn/emmet-vim'

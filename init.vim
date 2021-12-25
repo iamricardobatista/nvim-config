@@ -23,6 +23,7 @@ set undolevels=1000             " Number of undo levels
 set backspace=indent,eol,start  " Backspace behaviour
 set clipboard+=unnamedplus      " Add system clipboard to the list
 set updatetime=300
+set completeopt=menu,menuone,noselect
 
 " enable lua plugins ./lua/plugins.lua
 lua require('plugins')
