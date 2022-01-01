@@ -7,7 +7,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Tab operations
 nnoremap <C-t> <cmd>tabnew<cr>
-nnoremap <C-j> <cmd>tabnext<cr>
+nnoremap <C-k> <cmd>tabnext<cr>
 nnoremap <C-l> <cmd>tabprevious<cr>
 nnoremap <C-d> <cmd>bdelete<cr>
 
@@ -20,7 +20,7 @@ nnoremap <leader>xl <cmd>TroubleToggle loclist<cr>
 nnoremap gR <cmd>TroubleToggle lsp_references<cr>
 
 " LSP specific utils
-nnoremap <C-k> <cmd>lua vim.lsp.buf.hover()<cr>
+nnoremap <C-i> <cmd>lua vim.lsp.buf.hover()<cr>
 nnoremap <C-a> <cmd>lua vim.lsp.buf.code_action()<cr>
 nnoremap <C-f> <cmd>lua vim.lsp.buf.formatting()<cr>
 nnoremap <C-g> <cmd>Telescope lsp_definitions<cr>
