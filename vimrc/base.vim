@@ -17,3 +17,6 @@ augroup END
 if filereadable("./.lnvimrc")
     execute "source ./.lnvimrc"
 endif
+
+" load colorscheme
+colorscheme nightfox
