@@ -25,6 +25,8 @@ set clipboard+=unnamedplus      " Add system clipboard to the list
 set updatetime=300
 set completeopt=menu,menuone,noselect
 
+:colorscheme nightfox
+
 " enable lua plugins ./lua/plugins.lua
 lua require('plugins')
 " base configuration in lua ./lua/base.lua
