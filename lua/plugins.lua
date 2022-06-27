@@ -25,27 +25,9 @@ return require('packer').startup(function()
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
 
-  -- list code errors and issues
   use {
-    "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-    config = function()
-      require("trouble").setup {}
-    end
+    'neoclide/coc.nvim', branch = 'release'
   }
-
-  -- lsp configuration
-  use 'neovim/nvim-lspconfig'
-
-  -- autocomplete plugins
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
-
-  use 'hrsh7th/cmp-vsnip'
-  use 'hrsh7th/vim-vsnip'
 
   -- emmet plugin
   use 'mattn/emmet-vim'
