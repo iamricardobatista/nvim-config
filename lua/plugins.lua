@@ -25,7 +25,10 @@ return require('packer').startup(function()
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
 
- -- emmet plugin
+  -- lsp configurations
+  use 'neovim/nvim-lspconfig'
+
+  -- emmet plugin
   use 'mattn/emmet-vim'
 
   -- debug tool
