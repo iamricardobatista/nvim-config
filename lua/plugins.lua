@@ -28,6 +28,14 @@ return require('packer').startup(function()
   -- lsp configurations
   use 'neovim/nvim-lspconfig'
 
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+        require("trouble").setup {}
+    end
+  }
+
   -- emmet plugin
   use 'mattn/emmet-vim'
 
