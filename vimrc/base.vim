@@ -15,7 +15,11 @@ augroup END
 
 " add support for local project configuration
 if filereadable("./.lnvimrc")
-    execute "source ./.lnvimrc"
+    execute "source ./lnvimrc"
+endif
+
+if filereadable("./lnvimrc.lua")
+    lua require("lnvimrc")
 endif
 
 " load colorscheme
