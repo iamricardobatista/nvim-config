@@ -19,6 +19,9 @@ return require('packer').startup(function()
   -- Git file changes
   use 'airblade/vim-gitgutter'
 
+  -- git blame
+  use 'f-person/git-blame.nvim'
+
   -- status line
   use {
     'nvim-lualine/lualine.nvim',
